@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #f3f6f4;
+  color: #16241f;
+}
+
+.pulse-path {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-path {
+    animation: none !important;
+    stroke-dashoffset: 0;
+  }
+}
